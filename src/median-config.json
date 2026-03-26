@@ -1,0 +1,39 @@
+{
+  "appName": "C2C Location Sharing",
+  "packageName": "com.yourcompany.c2clocation",
+  "version": "1.0.0",
+  "url": "https://your-deployed-app.com",
+  "permissions": [
+    "android.permission.ACCESS_FINE_LOCATION",
+    "android.permission.ACCESS_COARSE_LOCATION",
+    "android.permission.INTERNET",
+    "android.permission.ACCESS_NETWORK_STATE"
+  ],
+  "features": {
+    "geolocation": {
+      "enabled": true,
+      "alwaysShowRequest": true,
+      "requestOnStart": true
+    },
+    "websocket": {
+      "enabled": true,
+      "reconnectOnClose": true
+    },
+    "background": {
+      "enabled": true,
+      "locationUpdates": true
+    }
+  },
+  "android": {
+    "minSdkVersion": 21,
+    "targetSdkVersion": 33,
+    "keystore": {
+      "generate": true
+    }
+  },
+  "ios": {
+    "minVersion": "12.0",
+    "locationAlwaysUsage": true,
+    "locationWhenInUse": true
+  }
+}
