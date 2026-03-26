@@ -145,3 +145,4 @@ export const useLocation = (userId, userName, userUuid, avatarColor) => {
         getNearbyUsers
     };
 };
+

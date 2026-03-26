@@ -6,19 +6,21 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    overflow: hidden;
+    overflow: auto;
     -webkit-tap-highlight-color: transparent;
 }
 
 /* ─── Auth Screen ─────────────────────────────────────────── */
 
 .auth-screen {
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 20px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .auth-card {
@@ -28,6 +30,9 @@ body {
     width: 100%;
     max-width: 420px;
     overflow: hidden;
+    max-height: calc(100dvh - 40px);
+    display: flex;
+    flex-direction: column;
 }
 
 .auth-header {
@@ -83,6 +88,8 @@ body {
 
 .auth-form {
     padding: 24px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .avatar-preview-row {
